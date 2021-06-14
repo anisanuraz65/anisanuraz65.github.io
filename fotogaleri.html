@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<style>
+		body {
+			font-family: 'Baloo Tammudu 2', cursive;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		.container {
+			max-width: 1100px;
+			width: 100%;
+			padding: 40px 15px;
+			margin: 0 auto;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		.header {
+			margin: 1px 0;
+			overflow: hidden;
+		}
+		.header img {
+			width: 150px;
+			height: 150px;
+			border-radius: 100%;
+			object-fit: cover;
+		}
+		.gallery {
+			margin; 10px 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-gap: 15px; 
+		}
+		.gallery img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border: 1px solid #eee;
+			box-shadow: 1px 2px 3px #ddd;
+			border-radius: 10px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<input type="checkbox" id="check">
+    	<label for="check"></label>
+      		<i class="fas fa-bars"></i>
+    	<label class="logo">Nisa's Blog</label>
+    		<ul>
+      			<li> <a href="index.html">Home</a></li>
+      			<li> <a class="active" href="fotogaleri.html">Galery</a></li>
+      			<li> <a href="#">Contact</a></li>
+      			<li> <a href="#">Feedback</a></li>
+    		</ul>
+    	<form class="d-flex">
+        	<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        	<button class="btn btn-outline-success" type="submit">Search</button>
+      	</form>
+  	</nav>
+	<div class="container">
+		<div class="header">
+			<h2>Welcome to my gallery!</h2>
+		</div>
+		<div class="gallery">
+			<img src="foto1.jpg">
+			<img src="foto2.jpg">
+			<img src="foto3.jpg">
+			<img src="foto4.jpg">
+			<img src="foto5.jpg">
+			<img src="foto6.jpg">
+			<img src="foto7.jpg">
+			<img src="foto8.jpg">
+			<img src="foto9.jpg">
+			<img src="foto10.jpg">
+		</div>
+	</div>
+</body>
+</html>
